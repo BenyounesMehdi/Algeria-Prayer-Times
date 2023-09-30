@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/style.css">
+    <title>Algeria Prayer Times</title>
+</head>
+<body class="font-english" style="min-height: 100vh; background-color: rgb(7, 0, 48);">
+    
+    <div class="w-full h-full p-4 container mx-auto text-white" id="main-container">
+        <p class="text-4xl sm:text-9xl font-bold text-left" id="city-Name">Adrar</p>
+        <div class="mt-3 mb-2" id="dates">
+            <p class="text-xl sm:text-3xl" id="hijri-date"></p>
+            <p class="text-xl sm:text-3xl" id="gregorian-date"></p>
+        </div>
+        <hr class="border-1" style="border-color: #f11cf1;">
+        <div class="flex flex-col-reverse md:flex-col gap-10 mt-8">
+            <div class="flex flex-col md:flex-row  justify-center items-center gap-2 font-arabic" id="cards">
+                <div class="w-full md:w-3/6 lg:w-1/6 ">
+                    <div class="text-white  rounded-t-3xl p-5 text-center text-2xl xl:text-4xl" style="background-color: rgb(182, 15, 182);" id="cardTitle">الفجر</div>
+                    <div class="flex justify-center items-center rounded-b-3xl bg-white py-16 text-center" id="cardBody">
+                        <p class="text-black font-bold text-3xl lg:text-5xl" id="fajr"></p>
+                    </div>
+                </div>
+                <div class="w-full md:w-3/6 lg:w-1/6 ">
+                    <div class="text-white  rounded-t-3xl p-5 text-center text-2xl xl:text-4xl" style="background-color: rgb(182, 15, 182);" id="cardTitle">الشروق</div>
+                    <div class="flex justify-center items-center rounded-b-3xl bg-white py-16 text-center" id="cardBody">
+                        <p class="text-black font-bold text-3xl lg:text-5xl" id="sunrise"></p>
+                    </div>
+                </div>
+                <div class="w-full md:w-3/6 lg:w-1/6 ">
+                    <div class="text-white  rounded-t-3xl p-5 text-center text-2xl xl:text-4xl" style="background-color: rgb(182, 15, 182);" id="cardTitle">الظهر</div>
+                    <div class="flex justify-center items-center rounded-b-3xl bg-white py-16 text-center" id="cardBody">
+                        <p class="text-black font-bold text-3xl lg:text-5xl" id="dhuhr"></p>
+                    </div>
+                </div>
+                <div class="w-full md:w-3/6 lg:w-1/6 ">
+                    <div class="text-white  rounded-t-3xl p-5 text-center text-2xl xl:text-4xl" style="background-color: rgb(182, 15, 182);" id="cardTitle">العصر</div>
+                    <div class="flex justify-center items-center rounded-b-3xl bg-white py-16 text-center" id="cardBody">
+                        <p class="text-black font-bold text-3xl lg:text-5xl" id="asr"></p>
+                    </div>
+                </div>
+                <div class="w-full md:w-3/6 lg:w-1/6 ">
+                    <div class="text-white  rounded-t-3xl p-5 text-center text-2xl xl:text-4xl" style="background-color: rgb(182, 15, 182);" id="cardTitle">المغرب</div>
+                    <div class="flex justify-center items-center rounded-b-3xl bg-white py-16 text-center" id="cardBody">
+                        <p class="text-black font-bold text-3xl lg:text-5xl" id="maghrib"></p>
+                    </div>
+                </div>
+                <div class="w-full md:w-3/6 lg:w-1/6 ">
+                    <div class="text-white  rounded-t-3xl p-5 text-center text-2xl xl:text-4xl" style="background-color: rgb(182, 15, 182);" id="cardTitle">العشاء</div>
+                    <div class="flex justify-center items-center rounded-b-3xl bg-white py-16 text-center" id="cardBody">
+                        <p class="text-black font-bold text-3xl lg:text-5xl" id="isha"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center items-center" id="cities">
+                <select class="w-4/6 py-2 px-3 text-2xl md:text-xl rounded-full outline-none focus:border-2 focus:border-white" id="selected-city" style="background-color: rgb(182, 15, 182);" >
+                </select>
+            </div>
+        </div>
+    </div>  
+
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
